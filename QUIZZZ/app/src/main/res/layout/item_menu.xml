@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_menu_card"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/item_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ic_image"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/item_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_menu_name"
+            android:layout_toEndOf="@id/ic_image"
+            android:text="Price" />
+
+        <ImageView
+            android:id="@+id/ic_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ic_delete"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
